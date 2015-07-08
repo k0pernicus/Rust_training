@@ -9,6 +9,6 @@ fn main() {
     let args: Vec<_> = env::args().collect();
     let ref arg = args[1].parse::<i32>().unwrap();
     for acc in &table{
-        println!("{} became {}", acc, add(&acc, &arg));
+        println!("{} + {} = {}", acc, arg, add(&acc, &arg));
     }
 }
